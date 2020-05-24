@@ -39,6 +39,7 @@ body {
     background: $background-color url(pics/background/#{$background-pattern});
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
 
 .card {
