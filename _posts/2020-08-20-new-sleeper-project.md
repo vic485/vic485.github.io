@@ -33,6 +33,8 @@ Still thinking on the parts list for the build, right now the thoughts are:
 
 And there we have it, pretty much everything that's happened with the sleeper so far. I'm already feeling better about this one as long as the actual build goes fine. Just need to clean, fix, and modify the case some before then. Will most likely list what parts I think can be sold on Ebay later. Enjoy the images below, and hopefully I'll be back with this build soon.
 
+[Next Part]({% post_url 2020-08-28-sleeper-work %})
+
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/a9t8uyD">
     <a href="//imgur.com/a/a9t8uyD">Sleeper PC Images</a>
 </blockquote>
