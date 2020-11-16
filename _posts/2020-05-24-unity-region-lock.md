@@ -8,7 +8,7 @@ description: Simple system to keep games from running outside their intended reg
 ## Region Lock for Unity Games (or other C# scripting engines)
 When publishing a game, it sometimes becomes necessary to restrict where the game can be bought and played. Whether it be due to regional restrictions on content, or to prevent cheats in on-line games. The system here will be more focused towards the former of the two scenarios, as it is designed to prevent the game from running if the user is outside our acceptable areas. I will be using Unity to show this system, but this can be easily adapted to pretty much any engine as long as you can access the `System.TimeZoneInfo` class in C# or something similar in another language.
 
-![Unity editor](/images/unity-region-lock/editor_setup.png)
+![Unity editor](https://imgur.com/lGMoSdV.png)
 Here I have setup a simple scene. This will be the very first scene loaded by our game and just contains the region lock script, and a message that will show if the user is in the wrong region. There's also a button to quit the game if needed.
 
 Create a new C# script to act as our region lock, and inside create a list to be serialized in the inspector.
@@ -16,7 +16,7 @@ Create a new C# script to act as our region lock, and inside create a list to be
 public List<string> allowedTimeZones = new List<string>();
 ```
 In the Unity inspector we can set as many time zones as we want to allow by putting in their ids
-![Time zone list](/images/unity-region-lock/timezone_list.png)
+![Time zone list](https://i.imgur.com/YPYG127.png)
 The following snippet of code can be used to find applicable ids.
 ```cs
 foreach (var timeZoneInfo in TimeZoneInfo.GetSystemTimeZones())
