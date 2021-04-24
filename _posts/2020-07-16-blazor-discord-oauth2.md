@@ -12,11 +12,11 @@ Perhaps you want to build a dashboard for your discord bot, and need to access C
 
 ### Setting up the Redirect Urls
 By default, Blazor server runs on either `http://localhost:5000` or `https://localhost:5001`. We need to add one or both of these to the OAuth section of our application. The library we will use also needs "/signin-discord" at the end to function properly. Save changes so the text box is green, and we can begin working on the website.
-![Redirect set](/images/discord-oauth-blazor/url-redirect.png)
+![Redirect set](https://i.imgur.com/rwUzery.png)
 
 ### Building the Website
 First you can remove the template provided pages from the project to clean up the file tree. The result should look similar to the project below. (Don't worry about the errors for now)
-![Project with template pages removed](/images/discord-oauth-blazor/default-project-layout.png)
+![Project with template pages removed](https://i.imgur.com/grWfPV6.png)
 
 Next we'll add the configuration information to our application. Copy and paste both your discord app's "client id" and "client secret" into your `appsettings.json` file as a new object.
 ```json
@@ -162,6 +162,6 @@ Move to the `Configure` method, and after `app.UseRouting();` add `app.UseAuthen
 
 With everything set, you should be able to run the server and log into your app with discord. This setup only does the "identify" scope by default, but additional scopes can be added, if needed, in the `AddDiscord` builder, for example: `x.AddScope("guilds");`.
 
-![Unauthorized view](/images/discord-oauth-blazor/before-login.png)
-![Logging in with OAuth](/images/discord-oauth-blazor/oauth-login.png)
-![Authorized view](/images/discord-oauth-blazor/after-login.png)
+![Unauthorized view](https://i.imgur.com/n8I8pFo.png)
+![Logging in with OAuth](https://i.imgur.com/Kke0nR4.png)
+![Authorized view](https://i.imgur.com/HWcc5JI.png)
